@@ -8,7 +8,10 @@
 */
 
 require_once('../../../manager/includes/protect.inc.php');
-require_once('../../../vendor/autoload.php');
+if (file_exists('../../../vendor/autoload.php')) {
+	require_once('../../../vendor/autoload.php');
+}
+
 set_time_limit (600);
 
 $database_type = "";
