@@ -12,15 +12,15 @@ global $modx,$manager_theme,$incPath,$_style,$modx_textdir,$SystemAlertMsgQueque
 if(IN_MANAGER_MODE != 'true') die('<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODx Content Manager instead of accessing this file directly.');
 
 $cap_lang=array();
-if (file_exists(MODX_BASE_PATH.'assets/modules/cacheallpages/lang/'.$manager_language.'.inc.php'))
-	include MODX_BASE_PATH.'assets/modules/cacheallpages/lang/'.$manager_language.'.inc.php';
+if (file_exists(MODX_BASE_PATH.'assets/modules/evoCacheAllPages/lang/'.$manager_language.'.inc.php'))
+	include MODX_BASE_PATH.'assets/modules/evoCacheAllPages/lang/'.$manager_language.'.inc.php';
 else
-	include MODX_BASE_PATH.'assets/modules/cacheallpages/lang/english.inc.php';
+	include MODX_BASE_PATH.'assets/modules/evoCacheAllPages/lang/english.inc.php';
 
 include_once $incPath."header.inc.php";
 
 echo '<h1>'.$cap_lang['header'].'</h1>
- 		<script type="text/javascript" src="'.MODX_SITE_URL.'assets/modules/cacheallpages/progressbar.js"></script>
+ 		<script type="text/javascript" src="'.MODX_SITE_URL.'assets/modules/evoCacheAllPages/progressbar.js"></script>
 		<style type="text/css">
 			.progressbar_wrapper div{font:20px Arial;}
 		</style>
@@ -38,7 +38,7 @@ echo '<h1>'.$cap_lang['header'].'</h1>
 			});
 			$(\'wrapper\').appendChild(pb);
 function ajaxCache(progress) {
-	new Ajax(\''.MODX_SITE_URL.'assets/modules/cacheallpages/ajaxEvoCacheAllPages.php\', {
+	new Ajax(\''.MODX_SITE_URL.'assets/modules/evoCacheAllPages/ajaxEvoCacheAllPages.php\', {
 		method: \'post\',
 		postBody: Object.toQueryString({progress: progress}),
 		onComplete: nextCache
