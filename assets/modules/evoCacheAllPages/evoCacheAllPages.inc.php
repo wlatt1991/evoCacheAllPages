@@ -38,7 +38,7 @@ echo '<h1>'.$cap_lang['header'].'</h1>
 			});
 			$(\'wrapper\').appendChild(pb);
 function ajaxCache(progress) {
-	new Ajax(\''.MODX_SITE_URL.'assets/modules/cacheallpages/ajaxCacheAllPages.php\', {
+	new Ajax(\''.MODX_SITE_URL.'assets/modules/cacheallpages/ajaxEvoCacheAllPages.php\', {
 		method: \'post\',
 		postBody: Object.toQueryString({progress: progress}),
 		onComplete: nextCache

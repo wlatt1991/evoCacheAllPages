@@ -1,6 +1,6 @@
 // <?php 
 /**
- * Cache All Pages
+ * Evo Cache All Pages
  * 
  * The manager can cache all pages
  * 
@@ -12,4 +12,4 @@
  * @internal    @installset base, sample
  */
 
-include_once(MODX_BASE_PATH.'assets/modules/cacheallpages/cacheAllPages.inc.php');
+include_once(MODX_BASE_PATH.'assets/modules/evoCacheAllPages/evoCacheAllPages.inc.php');
