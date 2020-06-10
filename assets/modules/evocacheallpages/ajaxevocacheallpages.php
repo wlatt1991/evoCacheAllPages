@@ -19,9 +19,9 @@ $table_prefix = "";
 $base_url = "";
 $base_path = "";
 if (isset($_SERVER['SCRIPT_NAME']))
-	$_SERVER['SCRIPT_NAME']=str_replace('assets/modules/evoCacheAllPages/ajaxEvoCacheAllPages', 'index', $_SERVER['SCRIPT_NAME']);
+	$_SERVER['SCRIPT_NAME']=str_replace('assets/modules/evocacheallpages/ajaxevocacheallpages', 'index', $_SERVER['SCRIPT_NAME']);
 if (isset($_SERVER['PHP_SELF']))
-	$_SERVER['PHP_SELF']=str_replace('assets/modules/evoCacheAllPages/ajaxEvoCacheAllPages', 'index', $_SERVER['PHP_SELF']);
+	$_SERVER['PHP_SELF']=str_replace('assets/modules/evocacheallpages/ajaxevocacheallpages', 'index', $_SERVER['PHP_SELF']);
 if (!$rt = @include_once "../../../manager/includes/config.inc.php")
 	exit(100);
 define('MODX_API_MODE', true);

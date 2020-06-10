@@ -12,4 +12,4 @@
  * @internal    @installset base, sample
  */
 
-include_once(MODX_BASE_PATH.'assets/modules/evoCacheAllPages/evoCacheAllPages.inc.php');
+include_once(MODX_BASE_PATH.'assets/modules/evocacheallpages/evocacheallpages.inc.php');
